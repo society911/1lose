@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("./../assets/bg2.png");
+  background-image: url("../assets/bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #333;
@@ -246,3 +246,4 @@ footer {
     flex-wrap: wrap;
   }
 }
+
