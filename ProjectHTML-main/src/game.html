@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игра "Наперстки"</title>
+    <link rel="icon" type="image/png" href="./../assets/ico.png" />
+    <link rel="stylesheet" href="style2.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="./../assets/logo.png" alt="" class="ico" />
+      </a>
+    </header>
+
+    <main class="game-container">
+      <div class="game-name">
+        <h1>Игра "Наперстки"</h1>
+        <p>Угадайте, под каким наперстком спрятан шарик и выиграйте x2!</p>
+      </div>
+      <div class="game-info">
+        <div class="score-board">
+          <div class="score-item">Победы: <span id="wins">0</span></div>
+          <div class="score-item">Поражения: <span id="losses">0</span></div>
+        </div>
+
+        <div class="balance-container">
+          <div>Ваш баланс:</div>
+          <div class="balance" id="balance">1000</div>
+        </div>
+
+        <div class="betting-container">
+          <div class="multiplier">Коэффициент выигрыша: x2</div>
+
+          <div class="bet-input">
+            <label for="bet-amount">Ваша ставка:</label>
+            <input
+              type="number"
+              id="bet-amount"
+              min="10"
+              max="1000"
+              value="50"
+            />
+          </div>
+
+          <div class="bet-buttons">
+            <button class="bet-btn" data-bet="10">10</button>
+            <button class="bet-btn" data-bet="50">50</button>
+            <button class="bet-btn" data-bet="100">100</button>
+            <button class="bet-btn" data-bet="200">200</button>
+          </div>
+        </div>
+
+        <div class="thimbles-container">
+          <div class="thimble" id="thimble1">
+            <div class="thimble-top"></div>
+            <div class="ball" id="ball1"></div>
+          </div>
+          <div class="thimble" id="thimble2">
+            <div class="thimble-top"></div>
+            <div class="ball" id="ball2"></div>
+          </div>
+          <div class="thimble" id="thimble3">
+            <div class="thimble-top"></div>
+            <div class="ball" id="ball3"></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="start-btn">Начать игру</button>
+          <button id="reset-btn">Сбросить игру</button>
+        </div>
+
+        <div class="message" id="message"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Мареич Владислав ИС-41.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
